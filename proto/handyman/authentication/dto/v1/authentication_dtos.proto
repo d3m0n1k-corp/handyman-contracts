@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package handyman.authentication.dto.v1;
+
+message GenerateTokenRequest {
+  string master_jwt_token = 1;
+  string slave_id = 2;
+  string audience = 3;
+  repeated string scopes = 4;
+  int64 expires_in_seconds = 5;
+}
+
+message GenerateTokenResponse {
+  string access_token = 1;
+  string token_type = 2;
+  int64 expires_in_seconds = 3;
+}
+

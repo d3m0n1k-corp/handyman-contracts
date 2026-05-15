@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package handyman.permission.dto.v1;
+
+message RequestPermissionRequest {
+  string jwt_token = 1;
+  string permission = 2;
+  string resource = 3;
+  string reason = 4;
+}
+
+message RequestPermissionResponse {
+  string request_id = 1;
+  string status = 2;
+}
+
+message RequestPermissionGroupRequest {
+  string jwt_token = 1;
+  string permission_group = 2;
+  string resource = 3;
+  string reason = 4;
+}
+
+message RequestPermissionGroupResponse {
+  string request_id = 1;
+  string status = 2;
+}
+
