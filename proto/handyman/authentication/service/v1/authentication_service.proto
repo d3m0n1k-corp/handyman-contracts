@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package handyman.authentication.service.v1;
-
-import "handyman/authentication/dto/v1/authentication_dtos.proto";
-
-service AuthenticationService {
-  rpc GenerateToken(.handyman.authentication.dto.v1.GenerateTokenRequest) returns (.handyman.authentication.dto.v1.GenerateTokenResponse);
-}

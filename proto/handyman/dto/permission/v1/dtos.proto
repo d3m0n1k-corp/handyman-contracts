@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package handyman.permission.dto.v1;
+package handyman.dto.permission.v1;
 
 message RequestPermissionRequest {
   string jwt_token = 1;
@@ -25,4 +25,3 @@ message RequestPermissionGroupResponse {
   string request_id = 1;
   string status = 2;
 }
-

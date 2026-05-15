@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package handyman.service.permission.v1;
+
+import "handyman/dto/permission/v1/dtos.proto";
+
+service PermissionService {
+  rpc RequestPermission(.handyman.dto.permission.v1.RequestPermissionRequest) returns (.handyman.dto.permission.v1.RequestPermissionResponse);
+  rpc RequestPermissionGroup(.handyman.dto.permission.v1.RequestPermissionGroupRequest) returns (.handyman.dto.permission.v1.RequestPermissionGroupResponse);
+}
